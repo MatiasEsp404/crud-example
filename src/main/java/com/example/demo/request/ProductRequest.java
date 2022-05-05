@@ -2,6 +2,7 @@ package com.example.demo.request;
 
 import javax.validation.constraints.Min;
 import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotNull;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.Setter;
@@ -11,17 +12,17 @@ import lombok.Setter;
 @Builder
 public class ProductRequest {
 
-  //TODO Validation errors need to be developed
-
-  @NotBlank(message = "Name cannot be empty")
+  @NotBlank(message = "Name can't be empty")
   private String name;
 
   private String description;
 
-  @Min(value = 0, message = "Price cannot be negative")
+  @NotNull(message = "Price can't be null")
+  @Min(value = 0, message = "Price can't be negative")
   private Float price;
 
-  @Min(value = 0, message = "Stock cannot be negative")
+  @NotNull(message = "Price can't be null")
+  @Min(value = 0, message = "Stock can't be negative")
   private Integer stock;
 
 }

@@ -1,6 +1,7 @@
 package com.example.demo.service;
 
 import com.example.demo.entity.ProductEntity;
+import com.example.demo.exception.EntityNotFoundException;
 import com.example.demo.mapper.ProductMapper;
 import com.example.demo.repository.ProductRepository;
 import com.example.demo.request.ProductRequest;
@@ -49,7 +50,7 @@ public class ProductService implements IProductService {
 
   private void checkIfExist(Long id) {
     if (!productRepository.existsById(id)) {
-      //TODO Missing create "entity not found" error
+      throw new EntityNotFoundException("Product not found");
     }
   }
 
