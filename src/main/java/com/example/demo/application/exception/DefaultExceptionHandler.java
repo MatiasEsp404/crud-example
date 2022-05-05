@@ -1,6 +1,6 @@
-package com.example.demo.exception;
+package com.example.demo.application.exception;
 
-import com.example.demo.response.ErrorResponse;
+import com.example.demo.application.rest.response.ErrorResponse;
 import java.util.List;
 import java.util.stream.Collectors;
 import org.springframework.context.support.DefaultMessageSourceResolvable;

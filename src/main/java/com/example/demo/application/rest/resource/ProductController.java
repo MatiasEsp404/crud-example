@@ -1,8 +1,8 @@
-package com.example.demo.controller;
+package com.example.demo.application.rest.resource;
 
-import com.example.demo.request.ProductRequest;
-import com.example.demo.response.ProductResponse;
-import com.example.demo.service.abstraction.IProductService;
+import com.example.demo.application.rest.request.ProductRequest;
+import com.example.demo.application.rest.response.ProductResponse;
+import com.example.demo.application.service.abstraction.IProductService;
 import javax.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;

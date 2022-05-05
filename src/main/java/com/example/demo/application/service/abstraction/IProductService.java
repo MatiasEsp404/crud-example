@@ -1,7 +1,7 @@
-package com.example.demo.service.abstraction;
+package com.example.demo.application.service.abstraction;
 
-import com.example.demo.request.ProductRequest;
-import com.example.demo.response.ProductResponse;
+import com.example.demo.application.rest.request.ProductRequest;
+import com.example.demo.application.rest.response.ProductResponse;
 
 public interface IProductService {
 

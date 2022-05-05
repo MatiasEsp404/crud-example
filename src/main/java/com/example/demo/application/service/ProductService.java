@@ -1,12 +1,12 @@
-package com.example.demo.service;
+package com.example.demo.application.service;
 
-import com.example.demo.entity.ProductEntity;
-import com.example.demo.exception.EntityNotFoundException;
-import com.example.demo.mapper.ProductMapper;
-import com.example.demo.repository.ProductRepository;
-import com.example.demo.request.ProductRequest;
-import com.example.demo.response.ProductResponse;
-import com.example.demo.service.abstraction.IProductService;
+import com.example.demo.infrastructure.database.entity.ProductEntity;
+import com.example.demo.application.exception.EntityNotFoundException;
+import com.example.demo.infrastructure.database.mapper.ProductMapper;
+import com.example.demo.infrastructure.database.repository.ProductRepository;
+import com.example.demo.application.rest.request.ProductRequest;
+import com.example.demo.application.rest.response.ProductResponse;
+import com.example.demo.application.service.abstraction.IProductService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

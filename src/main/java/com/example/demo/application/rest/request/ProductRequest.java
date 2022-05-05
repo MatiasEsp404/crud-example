@@ -1,4 +1,4 @@
-package com.example.demo.request;
+package com.example.demo.application.rest.request;
 
 import javax.validation.constraints.Min;
 import javax.validation.constraints.NotBlank;

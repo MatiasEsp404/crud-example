@@ -1,8 +1,8 @@
-package com.example.demo.mapper;
+package com.example.demo.infrastructure.database.mapper;
 
-import com.example.demo.entity.ProductEntity;
-import com.example.demo.request.ProductRequest;
-import com.example.demo.response.ProductResponse;
+import com.example.demo.infrastructure.database.entity.ProductEntity;
+import com.example.demo.application.rest.request.ProductRequest;
+import com.example.demo.application.rest.response.ProductResponse;
 import org.springframework.stereotype.Component;
 
 @Component
